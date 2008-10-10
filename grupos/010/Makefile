@@ -1,6 +1,6 @@
 linkApp: cmpApp
-  cl nome_inverso.obj
+	gcc app.o -o app.exe
 
 cmpApp:
-  cl /c nome_inverso.c
+	gcc -c app.c
   
