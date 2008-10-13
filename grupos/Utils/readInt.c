@@ -5,10 +5,14 @@ int   value;
 int main()
 {
     printf("Enter a value: ");
-
     fgets(line, sizeof(line), stdin);
     sscanf(line, "%d", &value);
+	while( value != 0 ){
+	  printf("Nº %d \n", value);
+	  printf("Enter a value: ");
 
-    printf("Twice %d is %d\n", value, value * 2);
+	  fgets(line, sizeof(line), stdin);
+      sscanf(line, "%d", &value);
+	}        
     return  ;
 }
