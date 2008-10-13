@@ -1,18 +1,20 @@
 #include <stdio.h>
-char  line[100];   
-int   value;       
+int readInt(){
+  char  buffer[10];   
+  int returnValue = 0;
+
+  printf("Enter a value: ");
+  fgets(buffer, sizeof(buffer), stdin);
+  sscanf(buffer, "%d", &returnValue);
+
+  return( returnValue );
+}
 
 int main()
 {
-    printf("Enter a value: ");
-    fgets(line, sizeof(line), stdin);
-    sscanf(line, "%d", &value);
-	while( value != 0 ){
+	int   value;       
+	while( ( value = readInt() ) != 0 ){
 	  printf("Nº %d \n", value);
-	  printf("Enter a value: ");
-
-	  fgets(line, sizeof(line), stdin);
-      sscanf(line, "%d", &value);
 	}        
     return  ;
 }
