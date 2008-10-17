@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
+//#include <math.h>
 
 
 /*------------------------------------------------------------------------------
@@ -17,18 +17,23 @@
  *peso do inteiro.
  *------------------------------------------------------------------------------
  */
+int pow2 (int i){
+    int j=1;
+    j<<=i;
+    return j;
+    }
 
 int reset_bits (unsigned int v,unsigned int p, unsigned int n){
     unsigned int tmp=0;
     while (n>0){
-        tmp+=pow(2.0,p+n);
+        tmp+=pow2(p+n);
         n--;
     }
     tmp=~tmp;
     return v&tmp;
 }
 int main(int argc, char** argv) {
-    printf ("%d >>>>\n>",reset_bits(313,2,3));
+    printf (">>>> %d\n",reset_bits(313,2,3));
     return (EXIT_SUCCESS);
 }
 

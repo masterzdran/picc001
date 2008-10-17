@@ -2,9 +2,9 @@
 #include <stdlib.h>
 /*------------------------------------------------------------------------------
  *Exercicio 3:
- *Escreva a fun√ß√£o distance_zeros(v) que retorna a maior dist√¢ncia entre dois
- *bits a 0 no valor inteiro sem sinal v. A fun√ß√£o retorna 0 se o valor v tiver
- *todos os bits a 1 ou s√≥ um bit a 0.
+ *Escreva a funÁ„o distance_zeros(v) que retorna a maior dist‚ncia entre dois
+ *bits a 0 no valor inteiro sem sinal v. A funÁ„o retorna 0 se o valor v tiver
+ *todos os bits a 1 ou sÛ um bit a 0.
  *------------------------------------------------------------------------------
  */
 int distance_zeros(unsigned int v) {
@@ -20,10 +20,3 @@ int distance_zeros(unsigned int v) {
     }
     return ( max);
 }
-
-/*
-int main(int argc, char **argv) {
-   unsigned int inputData = atoi(argv[1]);
-    return ( distance_zeros(inputData));
-}
-*/
