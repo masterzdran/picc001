@@ -1,10 +1,13 @@
 #include <stdio.h>
 
-void reverse(){
-	printf( "..." );
+void reverse( char *s ){
+	printf( "%s\n", s );
 }
 
-int main(){
-	reverse(); 
+int main( int argv, char *argc[] ){
+	unsigned int i;
+	for( i = 1; i < argv; i++ ){
+	  reverse( argc[i] ); 
+	}
 	return( 1 );
 }

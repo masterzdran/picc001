@@ -1,6 +1,9 @@
 linkApp: cmpApp
-	gcc app.o -o app.exe
+	gcc app.o isel.o -o app.exe
 
-cmpApp:
+cmpApp: cmpLibrary
 	gcc -c app.c
+
+cmpLibrary:
+	gcc -c isel.c
   

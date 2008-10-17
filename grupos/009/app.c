@@ -5,8 +5,8 @@ unsigned int memcopyif(char *d, char *f, int n, char min, char max){
 	int i;
 	
 	for( i = 0; i <= n; i++ ){
-		if( (*((&*f) + i) >= min) && (*((&*f) + i) <= max) ){
-			*d = ( *((&*f) + i) );
+		if( (*( f + i) >= min) && (*(f + i) <= max) ){
+			*d = ( *(f + i) );
 			d += 1;
 		}
 	}

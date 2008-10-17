@@ -1,6 +1,6 @@
 linkApp: cmpApp
-	gcc app.o -o app.exe
+	gcc nome_inverso.o -o nome_inverso.exe
 
 cmpApp:
-	gcc -c app.c
+	gcc -c nome_inverso.c
   
