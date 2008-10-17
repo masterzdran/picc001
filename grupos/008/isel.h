@@ -28,10 +28,16 @@ void norepspaces( char *s){
 	}
 }
 
-int main(){
-	char str[] = "   ISEL  2008    2009 PICC     ";
-	printf("init str :: %s \n", str );
-	norepspaces( str );
-	printf( "end str  :: %s ", str );
-	return( 1 );
+void reverse( unsigned char *head, unsigned int len ){	
+	unsigned char *tail = head + (len - 2);
+	unsigned char tmp;
+	
+	while( head < tail ){
+		tmp = *head;
+		*head = *tail;
+		*tail = tmp;
+
+		head += 1;
+		tail -= 1;
+	}
 }

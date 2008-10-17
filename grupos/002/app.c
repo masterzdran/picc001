@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 void echoPlus(){
-	printf( "..." );
+	int c;
+	while( ( c = getchar() ) != EOF ){
+		printf( "%c", (char)c ); 
+	}
 }
 
 int main(){
