@@ -13,8 +13,10 @@ int main( int argv, char *argc[] ){
 			argc[i] += 1; 
 			size += 1;
 		}
-		argc[i] = adr;
+	    argc[i] = adr;
 	  reverse(argc[i], (size + 1)); 
+      norepspaces( argc[i] );     
+
 	  printf( "%s ", argc[i]);
 	}
 	return( 1 );
