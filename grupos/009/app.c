@@ -15,8 +15,9 @@ unsigned int memcopyif(char *d, char *f, int n, char min, char max){
 
 
 int main(){
-	char buffer[] = "                       "; //buffer lenght 20 
-	char str[]    = "0123456789";
+	//mem. dinamica
+	char buffer[] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '\0'}; //buffer lenght 20 
+	char str[]    = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '\0'};
 	unsigned int bytecopy;
 	
 	bytecopy = memcopyif( buffer, str, 5, '3', '9' ); 

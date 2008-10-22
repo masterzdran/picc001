@@ -1,6 +1,6 @@
 linkApp: cmpApp
-	gcc app.o -o app.exe
+	gcc app.o -o app.exe 
 
-cmpApp:
+cmpApp: 
 	gcc -c app.c
   

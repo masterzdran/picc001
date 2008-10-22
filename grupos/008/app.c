@@ -19,7 +19,8 @@ void initCap( char *s ){
 
 
 int main(){
-	char str[] = "    joão     maria    de Afonso   e    zé manuel     ";
+	//mem. dinamica
+	char str[] = { ' ', ' ', ' ', ' ', 'j', 'o', 'a', 'o', ' ', ' ', ' ', ' ', ' ', 'm', 'a', 'r', 'i', 'a', ' ', ' ', ' ', ' ', 'd', 'e', ' ', 'A', 'f', 'o', 'n', 's', 'o', ' ', ' ', ' ', 'e', ' ', ' ', ' ', ' ', 'z', 'é', ' ', 'm', 'a', 'n', 'u', 'e', 'l', ' ', ' ', ' ', ' ', ' ', '\0'};
 	reverse( str, sizeof( str ) );
     norepspaces( str );     
 	initCap(str);

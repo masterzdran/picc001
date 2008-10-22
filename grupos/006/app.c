@@ -15,8 +15,9 @@ void reverse( unsigned char *head, unsigned int len ){
 }
 
 int main(){
-	char str[] = "ISEL";
+	//memoria dinamica
+	char str[] = {'I','S','E','L','\0'};
 	reverse( str, sizeof(str) );
-	printf( "%s", str );
+	printf( "%s\n", str );
 	return( 1 );
 }

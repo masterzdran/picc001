@@ -29,7 +29,8 @@ void norepspaces( char *s){
 }
 
 int main(){
-	char str[] = "   ISEL  2008    2009 PICC     ";
+	//memoria dinamica
+	char str[] = {' ', ' ', ' ', 'I', 'S', 'E', 'L', ' ', ' ', '2', '0', '0', '8', ' ', ' ', ' ', ' ', '2', '0', '0', '9', ' ', 'P', 'I', 'C', 'C', ' ', ' ', ' ', ' ', '\0'};
 	printf("init str :: %s \n", str );
 	norepspaces( str );
 	printf( "end str  :: %s ", str );
